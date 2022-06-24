@@ -16,31 +16,16 @@ import Login from './app/screens/Login/Login';
 import Dashboard from './app/screens/Dashboard/Dashboard';
 import ThemeProvider from './app/contextApi/ThemeContext';
 import CallingScreen from './app/screens/CallingScreen/CallingScreen';
+import Call from './app/screens/Call/Call';
 
 
 const App = () => {
-  const requestCameraAndAudioPermission = async () => {
-    try {
-      const granted = await PermissionsAndroid.requestMultiple([
-        PermissionsAndroid.PERMISSIONS.RECORD_AUDIO,
-      ]);
-      if (
-        granted['android.permission.RECORD_AUDIO'] ===
-        PermissionsAndroid.RESULTS.GRANTED
-      ) {
-        console.log('You can use the mic');
-      } else {
-        console.log('Permission denied');
-      }
-    } catch (err) {
-      console.warn(err);
-    }
-  };
+  
   return (
     <ThemeProvider>
       <NavigationContainer>
         <SafeAreaView style={{flex: 1}}>
-          <StackNavigation />
+          <Call />
         </SafeAreaView>
       </NavigationContainer>
     </ThemeProvider>

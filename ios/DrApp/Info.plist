@@ -39,7 +39,7 @@
 	<string>need camera</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
-	<key>NSMicrophoneUsageDescription</key>
+	 <key>NSMicrophoneUsageDescription</key>
 	<string>need mic</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
