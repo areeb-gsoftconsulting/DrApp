@@ -17,6 +17,7 @@ import Dashboard from './app/screens/Dashboard/Dashboard';
 import ThemeProvider from './app/contextApi/ThemeContext';
 import CallingScreen from './app/screens/CallingScreen/CallingScreen';
 import Call from './app/screens/Call/Call';
+import VoiceCall from './app/screens/VoiceCall/VoiceCall';
 
 
 const App = () => {
@@ -25,7 +26,7 @@ const App = () => {
     <ThemeProvider>
       <NavigationContainer>
         <SafeAreaView style={{flex: 1}}>
-          <Call />
+          <VoiceCall />
         </SafeAreaView>
       </NavigationContainer>
     </ThemeProvider>
