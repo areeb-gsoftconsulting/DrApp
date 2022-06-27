@@ -102,6 +102,7 @@ const Call = () => {
     await _engine.current?.joinChannel(token, channelName, null, 0);
   };
 
+
   /**
    * @name endCall
    * @description Function to end the call

@@ -4,9 +4,9 @@ import {useStyles} from './styles';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {StackNavigationParams} from '../../Navigation/StackNavParams';
-import {ThemeContextType, Theme} from '../../types/theme';
+import {ThemeContextType, Theme} from '../../types/callingContextTypes';
 
-import {ThemeContext} from '../../contextApi/ThemeContext';
+import {ThemeContext} from '../../contextApi/CallingContext';
 
 // import authContext from '../../contextApi/authContext'
 

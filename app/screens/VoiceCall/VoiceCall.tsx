@@ -55,7 +55,7 @@ export default class App extends Component<Props, State> {
     this.state = {
       appId: `1a3ade3349ef4d1e990e5de8ae47f12b`,
       token:
-        '0061a3ade3349ef4d1e990e5de8ae47f12bIACd6p23CQysCylt7CBNUD7e5u2Jg+R69npe+UbU1tGtUgJkFYoAAAAAEABGROOe6fO2YgEAAQDn87Zi',
+        '0061a3ade3349ef4d1e990e5de8ae47f12bIACPrkhaWkgk19UrbNF+hjiSr5yPPikG6hjfoGmmjYVZlwJkFYoAAAAAEACJVdSDiZO6YgEAAQCJk7pi',
       channelName: 'yourChannel',
       openMicrophone: true,
       enableSpeakerphone: true,

@@ -4,9 +4,9 @@ import {useStyles} from './styles';
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {StackNavigationParams} from '../../Navigation/StackNavParams';
-import {ThemeContextType, Theme} from '../../types/theme';
+import {CallingContextType, Theme} from '../../types/callingContextTypes';
 
-import {ThemeContext} from '../../contextApi/ThemeContext';
+import {CallingContext} from '../../contextApi/CallingContext';
 
 // import authContext from '../../contextApi/authContext'
 
@@ -17,8 +17,8 @@ type loginScreenProp = NativeStackNavigationProp<
 
 const Login = () => {
   const {theme, userStatus, changeTheme, changeUserStatus} = React.useContext(
-    ThemeContext,
-  ) as ThemeContextType;
+    CallingContext,
+  ) as CallingContextType;
 
   const styles = useStyles();
   const [email, setEmail] = useState('');
