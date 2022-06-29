@@ -9,6 +9,8 @@ import {
 } from '../types/callingContextTypes';
 import {io} from 'socket.io-client';
 import {useState} from 'react';
+import NetInfo from '@react-native-community/netinfo';
+
 
 export const CallingContext = React.createContext<CallingContextType | null>(
   null,
@@ -79,7 +81,22 @@ const ThemeProvider: React.FC<React.ReactNode> = ({children}) => {
     socket.on('session', data => {
       setCurrentUser(data);
     });
+
+    // NetInfo.fetch().then(state => {
+    //   console.log('Connection type', state.type);
+    //   console.log('Is connected?', state.isConnected);
+    // });
+
   }, []);
+
+  useEffect(() => {
+    NetInfo.addEventListener(state => {
+      console.log('Is connected?', state.isConnected);
+      if (state.isConnected == false) {
+        socket.disconnect();
+      }
+    });
+  }, [NetInfo]);
 
   return (
     <CallingContext.Provider
