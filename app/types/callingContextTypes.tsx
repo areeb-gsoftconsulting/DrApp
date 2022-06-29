@@ -3,6 +3,7 @@ export type UserStatus = 'online' | 'offline' | 'busy';
 export type UserName = string;
 export type CurrentUser = object;
 export type Message = string;
+export type AllUsers = [object];
 export type CallingContextType = {
   theme: Theme;
   userStatus: UserStatus;
@@ -16,4 +17,5 @@ export type CallingContextType = {
   createNewUser: () => void;
   sendMessage: () => void;
   endJob: () => void;
+  allUsers: AllUsers;
 };

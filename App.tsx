@@ -27,7 +27,7 @@ const App = () => {
     <ThemeProvider>
       <NavigationContainer>
         <SafeAreaView style={{flex: 1}}>
-          <Dashboard />
+          <StackNavigation />
         </SafeAreaView>
       </NavigationContainer>
     </ThemeProvider>
